@@ -1,14 +1,11 @@
 terraform {
-  # It is recommended to use remote state instead of local
-  # You can update these values in order to configure your remote state.
-  /*  backend "remote" {
-    organization = "{{ORGANIZATION_NAME}}"
+  backend "remote" {
+    organization = "zambrana"
 
     workspaces {
-      name = "{{WORKSPACE_NAME}}"
+      name = "work-BTS-SWIM-DataIngestion-Cluster"
     }
   }
-*/
   required_version = ">= 0.12.17"
 }
 
