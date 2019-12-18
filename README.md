@@ -1,4 +1,6 @@
-# Data Ingestion
+# HDInsights Kafka Cluster
+
+This project shows how to create a HDInsights Kafka cluster in order to ingest FAA SWIM Data.
 
 It creates the following resources:
 
@@ -42,7 +44,20 @@ Most common paremeters are exposed as variables in _`variables.tf`_ and the clus
 It is assumed that you have azure CLI and Terraform installed and configured.
 More information on this topic [here](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure). I recommend using a Service Principal with a certificate.
 
-### versions
+### SWIM Access
+
+This project also assumes that you have access to SWIM Data from FAA. If you do not have access you can request it using these links:
+
+* https://data.faa.gov/
+* https://scds.swim.faa.gov
+
+This code shows sample code to ingest these subscriptions:
+
+* TFMS - Traffic Flow Management System.
+* STDDS - SWIM Terminal Data Distribution Systems.
+* TBFM - Time Based Flow Management.
+
+### Versions
 
 * Terraform =>0.12.17
 * Azure provider 1.37.0
