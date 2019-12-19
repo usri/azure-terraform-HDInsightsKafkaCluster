@@ -103,7 +103,7 @@ You can create a free Terraform Cloud account [here](https://app.terraform.io).
 ssh into edge node
 
 ```ssh
-ssh acctestusrvm@new-edgenode.swim-hdicluster-ssh.azurehdinsight.net -i ~/.ssh/vm_ssh
+ssh acctestusrvm@new-edgenode.btsclusterswimhdinsightskafka-ssh.azurehdinsight.net -i ~/.ssh/vm_ssh
 ```
 
 make sure default java is 1.8
